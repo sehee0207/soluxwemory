@@ -1,0 +1,32 @@
+.title {
+    color: #838383;
+    font-size: 32px;
+    font-weight: bold;
+}
+.inputform {
+    margin-top: 20px;
+    display: flex;
+}
+.text {
+    width: 100px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    padding-left: 30%;
+}
+.input {
+    justify-content: center;
+}
+.button-container {
+    margin-top: 5%;
+    display: flex;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.button-container .button {
+    margin: auto;
+    justify-content: center;
+}
