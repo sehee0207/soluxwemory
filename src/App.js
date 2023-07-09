@@ -10,6 +10,7 @@ import MainPage from "./component/page/MainPage";
 import CreateCommunityPage from "./component/page/CreateCommunityPage";
 import LoginPage from "./component/page/LoginPage";
 import SignupPage from "./component/page/SignupPage";
+import PostWritePage from "./component/page/PostWritePage";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
 				<Route index element={<LoginPage />} />
 				<Route path="signup" element={<SignupPage />} />
 				<Route path="main" element={<MainPage />} />
-				<Route path="create-community" element={<CreateCommunityPage />} />
+				<Route path="main/create-community" element={<CreateCommunityPage />} />
+				<Route path="main/post-write" element={<PostWritePage />} />
 				{/* <Route index element={<MainPage />} />
 				<Route path="create-community" element={<CreateCommunityPage />} />
 				<Route path="login" element={<LoginPage />} />
