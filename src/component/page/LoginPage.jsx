@@ -20,7 +20,7 @@ const Form = styled.form`
 `
 
 const TitleText = styled.p`
-    font-size: 40px;
+    font-size: 30px;
     padding: 0px 15px;
     margin-block-start: 10px;
     margin-block-end: 0.5em;
@@ -36,7 +36,6 @@ function LoginPage(props){
 
     return(
         <Wrapper>
-            <TopBar />
             <Container>
                 <div class="title">추억 저장 서비스 Wemory</div>
                 <TitleText>로그인</TitleText>
@@ -49,18 +48,19 @@ function LoginPage(props){
                         <div class="input"><Input type="password" name="pw1" /><br /></div></div>
                 </Form>
                 <div class="button-container">
-                <div class="button">
-                <Button
-                    title="회원가입"
-                    onClick={() => {
-                        navigate("/signup");
-                    }}/></div>
-                <div class="button">
-                <Button
-                    title="생성하기"
-                    onClick={() => {
-                        navigate("/");
-                    }}/></div></div>
+                    <div class="button-div">
+                        <Button
+                            title="로그인"
+                            onClick={() => {
+                                navigate("/main");
+                            }}
+                        /> 
+                    </div>
+
+                    <div class="under_text" onClick={() => {navigate("/signup")}}>
+                        계정이 없나요?
+                    </div> 
+                </div>
             </Container>
         </Wrapper>
     )

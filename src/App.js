@@ -15,10 +15,14 @@ function App() {
   return (
     <BrowserRouter>
 			<Routes>
-				<Route index element={<MainPage />} />
+				<Route index element={<LoginPage />} />
+				<Route path="signup" element={<SignupPage />} />
+				<Route path="main" element={<MainPage />} />
+				<Route path="create-community" element={<CreateCommunityPage />} />
+				{/* <Route index element={<MainPage />} />
 				<Route path="create-community" element={<CreateCommunityPage />} />
 				<Route path="login" element={<LoginPage />} />
-				<Route path="signup" element={<SignupPage />} />
+				<Route path="signup" element={<SignupPage />} /> */}
 			</Routes>
 		</BrowserRouter>
   );
