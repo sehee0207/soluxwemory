@@ -124,9 +124,9 @@
   background-color: #e6e6e6;
 }
 
-/* .react-calendar__tile--now {
+.react-calendar__tile--now {
   background: #dff64e;
-} */
+}
 
 .react-calendar__tile--now > abbr{
   text-decoration: underline;

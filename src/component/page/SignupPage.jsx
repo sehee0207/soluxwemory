@@ -27,7 +27,6 @@ const TitleText = styled.p`
     font-weight: 800;
     margin-bottom: 35px;
 `
-
 function SignupPage(props){
     const {} = props;
     const navigate = useNavigate();

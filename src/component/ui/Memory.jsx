@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import moment from "moment";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import '../../style/Calendar.css';
 import styled from "styled-components";
 import PostWritePage from "../page/PostWritePage";
@@ -39,11 +39,12 @@ function Memory(props){
 
     function Handler() {
         setCreateState(true)
+        console.log(moment(value).format("YYMMDD"));
     }
 
-    function closeHander(){
-        setCreateState(false);
-    }
+    // function closeHander(){
+    //     setCreateState(false);
+    // }
 
     return(
         <Wrapper>
@@ -56,9 +57,9 @@ function Memory(props){
                     value={value}
                     next2Label={null}
                     prev2Label={null}
-                    // onClickDay={()=>{navigate("/main/post-write")}}
                     onClickDay={Handler}
                 />
+                {/* {createIsOpen && <PostWritePage />} */}
                 {createIsOpen && navigate("/main/post-write")}
             </Container>
         </Wrapper>

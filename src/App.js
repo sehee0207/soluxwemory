@@ -21,10 +21,6 @@ function App() {
 				<Route path="main" element={<MainPage />} />
 				<Route path="main/create-community" element={<CreateCommunityPage />} />
 				<Route path="main/post-write" element={<PostWritePage />} />
-				{/* <Route index element={<MainPage />} />
-				<Route path="create-community" element={<CreateCommunityPage />} />
-				<Route path="login" element={<LoginPage />} />
-				<Route path="signup" element={<SignupPage />} /> */}
 			</Routes>
 		</BrowserRouter>
   );
